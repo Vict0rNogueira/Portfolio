@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+
+{% block title %}Projetos{% endblock %}
+
+{% block content %}
+<section class="projetos-section">
+    <h1 class="section-title">Meus Projetos</h1>
+    <p class="section-subtitle">Projetos desenvolvidos durante estudos e prática</p>
+    
+    <div class="projetos-grid">
+        <article class="project-card">
+            <div class="project-header">
+                <h2>Conversor de Moedas</h2>
+                <span class="project-badge">Backend</span>
+            </div>
+            <p class="project-description">
+                Pequeno projeto de conversor de moedas, convertendo as moedas em tempo real utilizando uma API externa para obter as taxas de câmbio atualizadas.
+            </p>
+            <div class="project-tech">
+                <span>Python</span>
+                <span>API</span>
+                <span>Streamlit</span>
+
+            </div>
+            <a href="https://github.com/Vict0rNogueira/Conversor-de-moeda" target="_blank" rel="noopener noreferrer" class="btn btn-github">Ver no GitHub</a>
+        </article>
+
+        <article class="project-card">
+            <div class="project-header">
+                <h2>Python + SQLAlchemy</h2>
+                <span class="project-badge">Python</span>
+            </div>
+            <p class="project-description">
+                Este projeto é uma aplicação Flask com integração SQLAlchemy para gerenciar dados de usuários. Inclui funcionalidades de registro e autenticação de usuários com validação de formulários.
+            </p>
+            <div class="project-tech">
+                <span>Python</span>
+                <span>SQLAlchemy</span>
+                <span>Flask</span>
+            </div>
+            <a href="https://github.com/Vict0rNogueira/Flask-SQLAlchemy" target="_blank" rel="noopener noreferrer" class="btn btn-github">Ver no GitHub</a>
+        </article>
+
+    </div>
+</section>
+{% endblock %}

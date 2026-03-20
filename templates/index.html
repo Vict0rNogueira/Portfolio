@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block title %}Início{% endblock %}
+
+{% block content %}
+<section class="hero">
+    <div class="hero-content">
+        <div class="hero-text">
+            <h1 class="hero-name">Victor Nogueira</h1>
+            <p class="hero-title">Desenvolvedor Backend | Python</p>
+            <p class="hero-description">
+                Desenvolvedor em formação, apaixonado por tecnologia e soluções que fazem diferença. 
+                Foco em Python, APIs e automação. Buscando minha primeira oportunidade para contribuir 
+                e crescer no mercado de desenvolvimento.
+            </p>
+            <div class="hero-buttons">
+                <a href="{{ url_for('projetos') }}" class="btn btn-primary">Ver Projetos</a>
+                <a href="{{ url_for('contato') }}" class="btn btn-secondary">Contato</a>
+            </div>
+            <div class="hero-skills">
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">SQL</span>
+                <span class="skill-tag">APIs REST</span>
+                <span class="skill-tag">Flask</span>
+                <span class="skill-tag">Hardware</span>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="avatar-placeholder" aria-hidden="true">
+              <img src="{{ url_for('static', filename='img/foto.jpg') }}" alt="Minha foto">
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,7 @@
+# Variáveis de ambiente (contém senhas!)
+.env
+
+# Python
+__pycache__/
+venv/
+*.pyc

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio de desenvolvedor - Python, Flask, Backend. Em busca de oportunidades na área de tecnologia.">
+    <meta name="keywords" content="desenvolvedor, python, flask, backend, portfólio, tecnologia">
+    <meta name="author" content="Seu Nome">
+    <title>{% block title %}Portfólio{% endblock %} | Desenvolvedor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <!-- Navbar fixa -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="{{ url_for('home') }}" class="nav-logo">Portfólio</a>
+            <button class="nav-toggle" aria-label="Menu" type="button">
+                <span class="hamburger"></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="{{ url_for('home') }}" class="nav-link">Início</a></li>
+                <li><a href="{{ url_for('projetos') }}" class="nav-link">Projetos</a></li>
+                <li><a href="{{ url_for('contato') }}" class="nav-link">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        {% block content %}{% endblock %}
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 - Desenvolvido com dedicação</p>
+            <p class="footer-tech">Python · Flask · HTML5 · CSS3</p>
+        </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
